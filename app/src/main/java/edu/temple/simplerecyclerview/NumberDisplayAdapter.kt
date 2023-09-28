@@ -20,7 +20,7 @@ class NumberDisplayAdapter (private val numbers: Array<Int>, _setSize: (Int) -> 
         // enumerate views inside layout
         val textView = layout.findViewById<TextView>(R.id.textView)
         init {
-            textView.setOnClickListener {setSize(textView[1])
+            textView.setOnClickListener {setSize(numbers[adapterPosition])
             }
         }
     }
